@@ -1,0 +1,825 @@
+[gd_scene load_steps=52 format=3 uid="uid://c2i3k6thip1iq"]
+
+[ext_resource type="PackedScene" uid="uid://dqmut3b5mwfmk" path="res://Scenes/Suzi_player.tscn" id="1_xo4dl"]
+[ext_resource type="PackedScene" uid="uid://br5s6htf4k1ki" path="res://Assests/models/castle walls and doors/wall.gltf" id="2_faqa8"]
+[ext_resource type="PackedScene" uid="uid://cjuo8wxrojobi" path="res://Assests/models/castle walls and doors/wall_shelves.gltf" id="4_kmltg"]
+[ext_resource type="PackedScene" uid="uid://i0udqbuc3v5k" path="res://Assests/models/castle walls and doors/wall_window_closed.gltf" id="5_cqckl"]
+[ext_resource type="PackedScene" uid="uid://cuomtjmd1lh1e" path="res://Assests/models/castle walls and doors/wall_cracked.gltf" id="5_kmltg"]
+[ext_resource type="PackedScene" uid="uid://hqh5vtscq7rn" path="res://Assests/models/castle walls and doors/wall_corner_small.gltf" id="6_cqckl"]
+[ext_resource type="PackedScene" uid="uid://dpq5td0hayboh" path="res://Assests/models/castle walls and doors/wall_doorway.gltf" id="7_cqckl"]
+[ext_resource type="PackedScene" uid="uid://k5mjepvwntgw" path="res://Assests/models/castle walls and doors/gltf/decoration/nature/hills_A.gltf" id="9_p4k87"]
+[ext_resource type="PackedScene" uid="uid://bcarysqohkkr3" path="res://Assests/models/castle walls and doors/gltf/decoration/nature/hills_A_trees.gltf" id="10_dqsex"]
+[ext_resource type="PackedScene" uid="uid://w8fsdna6xot3" path="res://Assests/models/castle walls and doors/gltf/decoration/nature/hills_B_trees.gltf" id="11_7o3o1"]
+[ext_resource type="PackedScene" uid="uid://bl0ljfhasl6sy" path="res://Assests/models/castle walls and doors/gltf/decoration/nature/mountain_C_grass_trees.gltf" id="12_12lo1"]
+[ext_resource type="PackedScene" uid="uid://cw86ohts22vvv" path="res://Assests/models/castle walls and doors/gltf/buildings/blue/building_castle_blue.gltf" id="13_hhcxc"]
+[ext_resource type="PackedScene" uid="uid://ctrj70arr2x7" path="res://Assests/models/castle walls and doors/gltf/decoration/nature/cloud_big.gltf" id="15_pjaai"]
+[ext_resource type="PackedScene" uid="uid://coiwqiqqxvu22" path="res://Assests/models/castle walls and doors/gltf/tiles/base/hex_grass.gltf" id="16_j2rcy"]
+[ext_resource type="PackedScene" uid="uid://8bbiu5ffbp28" path="res://Assests/models/additional castle stuff/gltf/door_gate.gltf.glb" id="19_7o3o1"]
+[ext_resource type="PackedScene" uid="uid://b7eije4qkhesm" path="res://Assests/models/castle walls and doors/floor_wood_large.gltf" id="20_hhcxc"]
+[ext_resource type="PackedScene" uid="uid://bl2pgx075leqg" path="res://Assests/models/castle walls and doors/pillar.gltf" id="20_j2rcy"]
+[ext_resource type="PackedScene" uid="uid://bpmn623tml4nn" path="res://Assests/models/castle walls and doors/floor_tile_large.gltf" id="21_hhcxc"]
+[ext_resource type="PackedScene" uid="uid://3c73n24qixf" path="res://Assests/models/castle walls and doors/floor_wood_small.gltf" id="21_otdp8"]
+[ext_resource type="PackedScene" uid="uid://drtiaat7ugqjf" path="res://Assests/models/wall_door.gltf.glb" id="23_7wmps"]
+[ext_resource type="PackedScene" uid="uid://tddcs7ftu2hw" path="res://Assests/models/castle walls and doors/floor_tile_small.gltf" id="24_4ccmg"]
+[ext_resource type="PackedScene" uid="uid://dp844auhao42d" path="res://Assests/models/additional castle stuff/gltf/wall_end.gltf.glb" id="25_m48le"]
+[ext_resource type="PackedScene" uid="uid://btt08ds3hdtus" path="res://Assests/models/additional castle stuff/gltf/wall.gltf.glb" id="26_4ccmg"]
+[ext_resource type="PackedScene" uid="uid://471gd3rf5rok" path="res://Assests/models/castle walls and doors/floor_tile_small_broken_B.gltf" id="26_kr75h"]
+[ext_resource type="PackedScene" uid="uid://bnqw6ykixv16i" path="res://Assests/models/castle walls and doors/wall_half.gltf" id="26_m48le"]
+[ext_resource type="PackedScene" uid="uid://d27h3etnndixw" path="res://Assests/models/wall_windowGate.gltf.glb" id="27_1tkdd"]
+[ext_resource type="PackedScene" uid="uid://bca25684pu0l7" path="res://Assests/models/castle walls and doors/gltf/tiles/base/hex_grass_bottom.gltf" id="28_setgi"]
+[ext_resource type="PackedScene" uid="uid://bevyqw52hjmjd" path="res://Assests/models/castle walls and doors/gltf/tiles/rivers/hex_river_K.gltf" id="29_qvxxn"]
+[ext_resource type="PackedScene" uid="uid://cnkjyyxja65dn" path="res://Assests/models/castle walls and doors/gltf/tiles/rivers/hex_river_L.gltf" id="30_jxoci"]
+[ext_resource type="PackedScene" uid="uid://docp0dql25nnm" path="res://Assests/models/castle walls and doors/gltf/decoration/nature/mountain_A_grass.gltf" id="31_n6bcv"]
+[ext_resource type="PackedScene" uid="uid://htn5huvuoi1o" path="res://Assests/models/castle walls and doors/gltf/decoration/nature/mountain_A.gltf" id="32_l28oe"]
+[ext_resource type="PackedScene" uid="uid://dspm3my5ei564" path="res://Assests/models/castle walls and doors/gltf/buildings/red/building_archeryrange_red.gltf" id="34_4fa7u"]
+[ext_resource type="PackedScene" uid="uid://b4ansvj62paib" path="res://Assests/models/castle walls and doors/gltf/buildings/yellow/building_tavern_yellow.gltf" id="36_4fa7u"]
+[ext_resource type="PackedScene" uid="uid://c8sv4h3e82v15" path="res://Assests/models/castle walls and doors/gltf/decoration/nature/mountain_B_grass_trees.gltf" id="36_ljrsy"]
+[ext_resource type="PackedScene" uid="uid://bgacuihfnwoch" path="res://Assests/models/castle walls and doors/gltf/decoration/nature/mountain_B_grass.gltf" id="37_j13yp"]
+[ext_resource type="PackedScene" uid="uid://ccnavyo343y7p" path="res://Assests/models/castle walls and doors/gltf/buildings/yellow/building_tower_base_yellow.gltf" id="37_s7sbd"]
+[ext_resource type="PackedScene" uid="uid://c2gwrin1iuuik" path="res://Assests/models/castle walls and doors/gltf/buildings/yellow/building_watermill_yellow.gltf" id="38_ljrsy"]
+[ext_resource type="PackedScene" uid="uid://d0wxnlh31e6p6" path="res://Assests/models/castle walls and doors/gltf/buildings/yellow/building_well_yellow.gltf" id="39_j13yp"]
+[ext_resource type="PackedScene" uid="uid://e4du2omrltjb" path="res://Assests/models/castle walls and doors/ceiling_tile.gltf" id="39_qvxxn"]
+[ext_resource type="PackedScene" uid="uid://5lwp5mi6apt1" path="res://Assests/models/castle walls and doors/gltf/buildings/yellow/building_windmill_yellow.gltf" id="40_e1ikl"]
+[ext_resource type="PackedScene" uid="uid://dhoko4cfrypyp" path="res://Assests/models/castle walls and doors/gltf/buildings/yellow/building_market_yellow.gltf" id="41_3yogb"]
+[ext_resource type="PackedScene" uid="uid://5ofnu44q1srw" path="res://Assests/models/castle walls and doors/gltf/buildings/yellow/building_tower_B_yellow.gltf" id="42_jcnsp"]
+[ext_resource type="PackedScene" uid="uid://c8y2l46l7nc0w" path="res://Assests/models/castle walls and doors/gltf/buildings/yellow/building_mine_yellow.gltf" id="43_cgvr5"]
+[ext_resource type="PackedScene" uid="uid://dx4usc5rsn2gi" path="res://Assests/models/castle walls and doors/floor_dirt_large_rocky.gltf" id="44_ljrsy"]
+[ext_resource type="PackedScene" uid="uid://dt2mr7dbl3n7h" path="res://Assests/models/additional castle stuff/gltf/barrel.gltf.glb" id="45_j13yp"]
+[ext_resource type="PackedScene" uid="uid://oc46kj7iukug" path="res://Assests/models/castle walls and doors/floor_dirt_large.gltf" id="46_e1ikl"]
+[ext_resource type="PackedScene" uid="uid://7d0ookbuwyq" path="res://Assests/models/castle walls and doors/gltf/buildings/green/building_market_green.gltf" id="47_j13yp"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_tp0ds"]
+sky_top_color = Color(1, 1, 1, 1)
+sky_horizon_color = Color(0.122211, 0.12632, 0.132807, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_xo4dl"]
+sky_material = SubResource("ProceduralSkyMaterial_tp0ds")
+
+[sub_resource type="Environment" id="Environment_faqa8"]
+background_mode = 2
+sky = SubResource("Sky_xo4dl")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m48le"]
+albedo_color = Color(0.898039, 0.917647, 0.45098, 1)
+
+[node name="Floor_1" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_faqa8")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.150384, -0.567596, -0.809457, -0.852868, -0.33961, 0.396586, -0.5, 0.75, -0.433013, -89.2, 526.8, 0)
+shadow_enabled = true
+
+[node name="floor" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -225.15, -0.15, -61.55)
+material_override = SubResource("StandardMaterial3D_m48le")
+use_collision = true
+size = Vector3(701.3, 1.3, 642.9)
+metadata/_edit_lock_ = true
+
+[node name="Character_Suzi" parent="." instance=ExtResource("1_xo4dl")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -149.3, 0.5, -67.7)
+
+[node name="castle_city" type="Node3D" parent="."]
+
+[node name="wall2" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -331.9, 0, -92)
+
+[node name="wall3" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -359, 0, -92)
+
+[node name="wall4" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -330.6, 0, -34)
+
+[node name="wall5" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -358.5, 0, -34)
+
+[node name="wall_shelves2" parent="castle_city" instance=ExtResource("4_kmltg")]
+transform = Transform3D(8.34742e-08, 0, -7, 0, 7, 0, 7, 0, 8.34742e-08, -315, 0, -52.1)
+
+[node name="wall_cracked2" parent="castle_city" instance=ExtResource("5_kmltg")]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -373.3, 0, -52)
+
+[node name="wall_corner_small2" parent="castle_city" instance=ExtResource("6_cqckl")]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -373, 0.5, -91.9)
+
+[node name="wall_corner_small3" parent="castle_city" instance=ExtResource("6_cqckl")]
+transform = Transform3D(-7, 0, -6.11959e-07, 0, 7, 0, 6.11959e-07, 0, -7, -373.3, 0, -34.3)
+
+[node name="wall_doorway2" parent="castle_city" instance=ExtResource("7_cqckl")]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -373.1, 0, -75.1)
+
+[node name="hills_A2" parent="castle_city" instance=ExtResource("9_p4k87")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -509.2, -8.2, -294.3)
+
+[node name="hills_A_trees2" parent="castle_city" instance=ExtResource("10_dqsex")]
+transform = Transform3D(100, 0, 3.8147e-06, 0, 100, 0, -3.8147e-06, 0, 100, -393.9, 0.5, -326.5)
+
+[node name="hills_B_trees2" parent="castle_city" instance=ExtResource("11_7o3o1")]
+transform = Transform3D(50, 0, 86.6025, 0, 100, 0, -86.6025, 0, 50, 84.1, 0, -328.3)
+
+[node name="mountain_C_grass_trees2" parent="castle_city" instance=ExtResource("12_12lo1")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -143.2, 0, -332)
+
+[node name="building_castle_blue2" parent="castle_city" instance=ExtResource("13_hhcxc")]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, -277.9, 0.5, -306.8)
+
+[node name="cloud_big2" parent="castle_city" instance=ExtResource("15_pjaai")]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, -342.3, 79.1, -263.5)
+
+[node name="cloud_big3" parent="castle_city" instance=ExtResource("15_pjaai")]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, -112.6, 96.4, -217.6)
+
+[node name="hex_grass2" parent="castle_city" instance=ExtResource("16_j2rcy")]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, -556.3, 0.8, -233.7)
+
+[node name="hex_grass3" parent="castle_city" instance=ExtResource("16_j2rcy")]
+transform = Transform3D(30, 0, 0, 0, 30, 0, 0, 0, 30, -474.8, 1.5, -221.4)
+
+[node name="hex_grass4" parent="castle_city" instance=ExtResource("16_j2rcy")]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, -430, 1.5, -236.8)
+
+[node name="wall6" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -299.6, 0, -109)
+
+[node name="wall7" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -246.9, 0, -109)
+
+[node name="wall8" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -221.4, 0, -109)
+
+[node name="door_gate_gltf" parent="castle_city" instance=ExtResource("19_7o3o1")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -312, 10, -66)
+
+[node name="wall_corner_small4" parent="castle_city" instance=ExtResource("6_cqckl")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -315.9, 0, -92.1)
+
+[node name="wall9" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -315.4, 0, -98.3)
+
+[node name="wall10" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -194.6, 0, -109.1)
+
+[node name="pillar2" parent="castle_city" instance=ExtResource("20_j2rcy")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -276.3, 0, -44.5)
+
+[node name="wall12" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -168.3, 0, -109)
+
+[node name="wall13" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -141.9, 0, -109.2)
+
+[node name="wall14" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -121.4, 0, -109.5)
+
+[node name="wall15" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -111, 0, -98.4)
+
+[node name="wall16" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -111, 0, -73.5)
+
+[node name="wall17" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -111, 0, -46.2)
+
+[node name="wall18" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -111, 0, -26.6)
+
+[node name="wall19" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -122, 0, -17)
+
+[node name="wall20" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -149.2, 0, -17)
+
+[node name="wall21" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -175, 0, -17)
+
+[node name="wall22" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -202.4, 0, -17)
+
+[node name="wall23" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -229.3, 0, -17)
+
+[node name="wall24" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -257, 0, -17)
+
+[node name="wall25" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -283.7, 0, -17)
+
+[node name="wall26" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -304.4, 0, -17)
+
+[node name="floor_wood_large2" parent="castle_city" instance=ExtResource("20_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -124.6, 0.6, -96.3)
+
+[node name="floor_wood_large3" parent="castle_city" instance=ExtResource("20_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -124.1, 0.6, -76.3)
+
+[node name="floor_wood_large4" parent="castle_city" instance=ExtResource("20_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -124.3, 0.6, -56.3)
+
+[node name="floor_wood_large5" parent="castle_city" instance=ExtResource("20_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -124, 0.6, -36.4)
+
+[node name="floor_wood_large7" parent="castle_city" instance=ExtResource("20_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -143.7, 0.6, -95.9)
+
+[node name="floor_wood_large8" parent="castle_city" instance=ExtResource("20_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -144, 0.6, -76.1)
+
+[node name="floor_wood_large9" parent="castle_city" instance=ExtResource("20_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -143.8, 0.6, -56.2)
+
+[node name="floor_wood_large11" parent="castle_city" instance=ExtResource("20_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -143.9, 0.6, -36.4)
+
+[node name="floor_wood_large12" parent="castle_city" instance=ExtResource("20_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -163.7, 0.6, -96)
+
+[node name="floor_wood_large13" parent="castle_city" instance=ExtResource("20_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -164, 0.6, -76.3)
+
+[node name="floor_wood_small2" parent="castle_city" instance=ExtResource("21_otdp8")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -119.5, 0.6, -21.3)
+
+[node name="floor_wood_small3" parent="castle_city" instance=ExtResource("21_otdp8")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -128.8, 0.6, -21.4)
+
+[node name="floor_wood_small4" parent="castle_city" instance=ExtResource("21_otdp8")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -138.5, 0.6, -21.4)
+
+[node name="floor_wood_small5" parent="castle_city" instance=ExtResource("21_otdp8")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -148.3, 0.6, -21.5)
+
+[node name="floor_wood_large6" parent="castle_city" instance=ExtResource("20_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -163.6, 0.6, -56.3)
+
+[node name="floor_wood_large10" parent="castle_city" instance=ExtResource("20_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -163.3, 0.6, -36.3)
+
+[node name="floor_wood_small6" parent="castle_city" instance=ExtResource("21_otdp8")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -158.3, 0.6, -21.8)
+
+[node name="floor_wood_small7" parent="castle_city" instance=ExtResource("21_otdp8")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -168.3, 0.7, -21.5)
+
+[node name="floor_wood_small8" parent="castle_city" instance=ExtResource("21_otdp8")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -178, 0.6, -100.8)
+
+[node name="floor_wood_small9" parent="castle_city" instance=ExtResource("21_otdp8")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -178, 0.6, -90.8)
+
+[node name="floor_wood_small10" parent="castle_city" instance=ExtResource("21_otdp8")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -179, 0.6, -80.9)
+
+[node name="floor_wood_small11" parent="castle_city" instance=ExtResource("21_otdp8")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -178.8, 0.6, -71)
+
+[node name="floor_wood_small12" parent="castle_city" instance=ExtResource("21_otdp8")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -178.5, 0.6, -61.2)
+
+[node name="floor_wood_small13" parent="castle_city" instance=ExtResource("21_otdp8")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -178.4, 0.6, -51.4)
+
+[node name="floor_wood_small14" parent="castle_city" instance=ExtResource("21_otdp8")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -178.3, 0.6, -41.4)
+
+[node name="floor_wood_small15" parent="castle_city" instance=ExtResource("21_otdp8")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -178.2, 0.6, -31.4)
+
+[node name="floor_wood_small16" parent="castle_city" instance=ExtResource("21_otdp8")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -178.1, 0.6, -21.5)
+
+[node name="floor_tile_large2" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -193, 0.6, -48.6)
+
+[node name="floor_tile_large3" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -193, 0.6, -29.6)
+
+[node name="floor_tile_large4" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -193, 0.6, -68.6)
+
+[node name="floor_tile_large5" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -192.7, 0.6, -87.5)
+
+[node name="floor_tile_large6" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -212.9, 0.6, -48.6)
+
+[node name="floor_tile_large7" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -212.9, 0.6, -29)
+
+[node name="floor_tile_large8" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -213, 0.6, -68.2)
+
+[node name="floor_tile_large9" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -212.6, 0.6, -87.5)
+
+[node name="floor_tile_large10" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -232.5, 0.6, -29.3)
+
+[node name="floor_tile_large11" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -232.8, 0.6, -48.6)
+
+[node name="floor_tile_large12" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -232.9, 0.6, -68.2)
+
+[node name="floor_tile_large13" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -232.6, 0.6, -87.3)
+
+[node name="floor_tile_large14" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -252.2, 0.6, -28.9)
+
+[node name="floor_tile_large15" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -251.9, 0.6, -48.9)
+
+[node name="floor_tile_large16" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -251.9, 0.6, -68.3)
+
+[node name="floor_tile_large17" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -251.9, 0.6, -87.2)
+
+[node name="floor_tile_large18" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -271.4, 0.6, -28.8)
+
+[node name="floor_tile_large19" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -271.3, 0.6, -48.8)
+
+[node name="floor_tile_large20" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -271.5, 0.6, -68.4)
+
+[node name="floor_tile_large21" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -271.5, 0.6, -87.2)
+
+[node name="floor_tile_large22" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -291, 0.6, -28.7)
+
+[node name="floor_tile_large23" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -290.9, 0.6, -48.6)
+
+[node name="floor_tile_large24" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -290.8, 0.6, -68.5)
+
+[node name="floor_tile_large25" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -290.7, 0.6, -87)
+
+[node name="floor_tile_small2" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -306, 0.6, -24.2)
+
+[node name="floor_tile_small3" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -306, 0.6, -33.5)
+
+[node name="floor_tile_small4" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -305.8, 0.6, -43.5)
+
+[node name="floor_tile_small5" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -305.4, 0.6, -53.2)
+
+[node name="floor_tile_small6" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -305.2, 0.6, -63.1)
+
+[node name="floor_tile_small7" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -305.2, 0.6, -72.9)
+
+[node name="floor_tile_small8" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -305.4, 0.6, -82.1)
+
+[node name="floor_tile_small9" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -305.3, 0.6, -91.9)
+
+[node name="floor_tile_small10" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -295.4, 0.6, -100.5)
+
+[node name="floor_tile_small11" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -305.2, 0.6, -100.7)
+
+[node name="floor_tile_small12" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -285.4, 0.6, -101.4)
+
+[node name="floor_tile_small13" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -275.5, 0.6, -101.5)
+
+[node name="floor_tile_small14" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -265.9, 0.6, -101.2)
+
+[node name="floor_tile_small15" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -255.9, 0.6, -101)
+
+[node name="floor_tile_small16" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -246.2, 0.6, -101.4)
+
+[node name="floor_tile_small17" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -236.8, 0.6, -100.7)
+
+[node name="floor_tile_small18" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -226.8, 0.6, -101.7)
+
+[node name="floor_tile_small19" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -217.1, 0.6, -101.2)
+
+[node name="floor_tile_small20" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -207.8, 0.6, -101.3)
+
+[node name="floor_tile_small21" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -198.9, 0.6, -101.1)
+
+[node name="floor_tile_small22" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -188.8, 0.6, -102.2)
+
+[node name="floor_tile_small23" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -311.7, 0.6, -101.3)
+
+[node name="floor_tile_small24" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -312.8, 0.6, -91.8)
+
+[node name="wall_door_gltf" parent="castle_city" instance=ExtResource("23_7wmps")]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -180.1, -0.1, -39.4)
+
+[node name="wall_end_gltf" parent="castle_city" instance=ExtResource("25_m48le")]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -180, -0.1, -96)
+
+[node name="floor_tile_small_broken_B2" parent="castle_city" instance=ExtResource("26_kr75h")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -314.9, 0.6, -72.9)
+
+[node name="floor_tile_small_broken_B3" parent="castle_city" instance=ExtResource("26_kr75h")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -314.9, 0.6, -82.9)
+
+[node name="floor_tile_small_broken_B4" parent="castle_city" instance=ExtResource("26_kr75h")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -314.9, 0.6, -63.2)
+
+[node name="floor_tile_small_broken_B5" parent="castle_city" instance=ExtResource("26_kr75h")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -315, 0.6, -53.3)
+
+[node name="floor_tile_small_broken_B6" parent="castle_city" instance=ExtResource("26_kr75h")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -315, 0.6, -43.5)
+
+[node name="floor_tile_small_broken_B7" parent="castle_city" instance=ExtResource("26_kr75h")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -323.4, 0.6, -42)
+
+[node name="floor_tile_small_broken_B8" parent="castle_city" instance=ExtResource("26_kr75h")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -323.4, 0.6, -51.6)
+
+[node name="floor_tile_small_broken_B9" parent="castle_city" instance=ExtResource("26_kr75h")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -323.3, 0.6, -61.5)
+
+[node name="floor_tile_small_broken_B10" parent="castle_city" instance=ExtResource("26_kr75h")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -323.3, 0.6, -71.4)
+
+[node name="floor_tile_small25" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -323.5, 0.6, -81.4)
+
+[node name="floor_tile_small26" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -323.5, 0.6, -90.8)
+
+[node name="floor_tile_small27" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -333.1, 0.6, -81.3)
+
+[node name="floor_tile_small28" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -333.2, 0.6, -71.4)
+
+[node name="floor_tile_small29" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -333.2, 0.6, -61.7)
+
+[node name="floor_tile_small30" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -333.2, 0.6, -51.7)
+
+[node name="floor_tile_large26" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -347.5, 0.6, -79.3)
+
+[node name="floor_tile_small31" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -333.2, 0.6, -90.9)
+
+[node name="floor_tile_small32" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -342.5, 0.6, -64.9)
+
+[node name="floor_tile_small33" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -352.3, 0.6, -65)
+
+[node name="floor_tile_small34" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -333.3, 0.6, -41.7)
+
+[node name="floor_tile_small35" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -342.9, 0.6, -54.9)
+
+[node name="floor_tile_small36" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -352.2, 0.6, -55.1)
+
+[node name="floor_tile_small37" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -342.9, 0.6, -44.9)
+
+[node name="floor_tile_small38" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -352.2, 0.6, -45.2)
+
+[node name="floor_tile_small39" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -342.4, 0.6, -35.2)
+
+[node name="floor_tile_small40" parent="castle_city" instance=ExtResource("24_4ccmg")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -352, 0.6, -36.5)
+
+[node name="floor_tile_large27" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -367, 0.6, -40)
+
+[node name="floor_tile_large28" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -366.9, 0.6, -60)
+
+[node name="floor_tile_large29" parent="castle_city" instance=ExtResource("21_hhcxc")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -367.5, 0.6, -79.3)
+
+[node name="wall11" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -111, 28, -26.9)
+
+[node name="wall27" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -111, 28, -46.2)
+
+[node name="wall28" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -111, 28, -73.6)
+
+[node name="wall29" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -111, 28, -98.3)
+
+[node name="wall30" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -122.1, 28, -17)
+
+[node name="wall31" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -149.2, 28, -17)
+
+[node name="wall32" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -175.1, 28, -17)
+
+[node name="wall34" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -127, 28, -109)
+
+[node name="wall33" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -155, 27.8, -109)
+
+[node name="wall35" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -182.2, 28, -109)
+
+[node name="wall36" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -209.8, 28, -109)
+
+[node name="wall37" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -237.6, 28, -109)
+
+[node name="wall38" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -265.6, 28, -109)
+
+[node name="wall39" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -293.3, 28, -109)
+
+[node name="wall40" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -315, 28, -98.1)
+
+[node name="wall41" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -315, 28, -70.6)
+
+[node name="wall42" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -315, 28, -42.9)
+
+[node name="wall43" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -201.2, 28, -17)
+
+[node name="wall44" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -229.1, 28, -17)
+
+[node name="wall45" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -257, 28, -17)
+
+[node name="wall46" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -283.6, 28, -17)
+
+[node name="wall47" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -304.4, 28, -17)
+
+[node name="wall48" parent="castle_city" instance=ExtResource("2_faqa8")]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -315, 0, -30.7)
+
+[node name="wall_half2" parent="castle_city" instance=ExtResource("26_m48le")]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -315, 28, -17.2)
+
+[node name="wall_half3" parent="castle_city" instance=ExtResource("26_m48le")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -311.6, 28, -109)
+
+[node name="wall_gltf" parent="castle_city" instance=ExtResource("26_4ccmg")]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -180.1, 27.9, -85.4)
+
+[node name="wall_gltf2" parent="castle_city" instance=ExtResource("26_4ccmg")]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -180.1, 27.9, -59.1)
+
+[node name="wall_gltf3" parent="castle_city" instance=ExtResource("26_4ccmg")]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -180.1, 27.9, -31.7)
+
+[node name="wall_windowGate_gltf" parent="castle_city" instance=ExtResource("27_1tkdd")]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -180.1, -0.1, -75.6)
+
+[node name="wall_gltf4" parent="castle_city" instance=ExtResource("26_4ccmg")]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -180.1, 27.9, -93.1)
+
+[node name="wall_window_closed2" parent="castle_city" instance=ExtResource("5_cqckl")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -273.9, 0, -109)
+
+[node name="hex_grass5" parent="castle_city" instance=ExtResource("16_j2rcy")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -478.2, 1.5, -186)
+
+[node name="hex_grass_bottom2" parent="castle_city" instance=ExtResource("28_setgi")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -281.5, 1, -222.3)
+
+[node name="mountain_C_grass_trees3" parent="castle_city" instance=ExtResource("12_12lo1")]
+transform = Transform3D(76.6044, 0, -64.2788, 0, 100, 0, 64.2788, 0, 76.6044, -520.9, 0.5, -231.7)
+
+[node name="hex_river_K2" parent="castle_city" instance=ExtResource("29_qvxxn")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -525, 20, 245.1)
+
+[node name="hex_river_K3" parent="castle_city" instance=ExtResource("29_qvxxn")]
+transform = Transform3D(-100, 0, -8.74228e-06, 0, 100, 0, 8.74228e-06, 0, -100, -325.1, 20, 238.3)
+
+[node name="hex_river_L2" parent="castle_city" instance=ExtResource("30_jxoci")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -503.8, 66.4, 78.1)
+
+[node name="mountain_A_grass2" parent="castle_city" instance=ExtResource("31_n6bcv")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -504.7, 0.5, -57.9)
+
+[node name="mountain_A2" parent="castle_city" instance=ExtResource("32_l28oe")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -435.4, 0.5, 88.8)
+
+[node name="building_archeryrange_red2" parent="castle_city" instance=ExtResource("34_4fa7u")]
+transform = Transform3D(100, 0, -3.8147e-06, 0, 100, 0, 3.8147e-06, 0, 100, -112.6, 0.6, 189.7)
+
+[node name="mountain_B_grass_trees2" parent="castle_city" instance=ExtResource("36_ljrsy")]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 133.9, 0.5, 124)
+
+[node name="mountain_B_grass2" parent="castle_city" instance=ExtResource("37_j13yp")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 108.1, 0.5, 18.5)
+
+[node name="cloud_big4" parent="castle_city" instance=ExtResource("15_pjaai")]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, -361.6, 232, 225.7)
+
+[node name="cloud_big5" parent="castle_city" instance=ExtResource("15_pjaai")]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, -57.3, 179.4, -35.2)
+
+[node name="mountain_A3" parent="castle_city" instance=ExtResource("32_l28oe")]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 34, 0.5, 244.6)
+
+[node name="ceiling_tile2" parent="castle_city" instance=ExtResource("39_qvxxn")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -359.3, 28.5, -78.5)
+
+[node name="ceiling_tile3" parent="castle_city" instance=ExtResource("39_qvxxn")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -359.4, 28.5, -50.7)
+
+[node name="ceiling_tile4" parent="castle_city" instance=ExtResource("39_qvxxn")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -332.4, 28.5, -78.7)
+
+[node name="ceiling_tile5" parent="castle_city" instance=ExtResource("39_qvxxn")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -331.7, 28.5, -50.7)
+
+[node name="building_tavern_yellow2" parent="castle_city" instance=ExtResource("36_4fa7u")]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, -22.1, 0.5, -292.3)
+
+[node name="building_tower_base_yellow2" parent="castle_city" instance=ExtResource("37_s7sbd")]
+transform = Transform3D(-50, 0, -86.6025, 0, 100, 0, 86.6025, 0, -50, 101.2, 0.5, 200.8)
+
+[node name="building_watermill_yellow2" parent="castle_city" instance=ExtResource("38_ljrsy")]
+transform = Transform3D(43.3013, 0, -25, 0, 50, 0, 25, 0, 43.3013, -438, 138.8, 72.6)
+
+[node name="building_well_yellow2" parent="castle_city" instance=ExtResource("39_j13yp")]
+transform = Transform3D(46.9846, 0, -17.101, 0, 50, 0, 17.101, 0, 46.9846, -146.4, 0.5, 85.7)
+
+[node name="building_windmill_yellow2" parent="castle_city" instance=ExtResource("40_e1ikl")]
+transform = Transform3D(-142.165, 0, 47.8439, 0, 150, 0, -47.8439, 0, -142.165, -256.7, 0, 88.6)
+
+[node name="building_market_yellow2" parent="castle_city" instance=ExtResource("41_3yogb")]
+transform = Transform3D(43.3013, 0, 25, 0, 50, 0, -25, 0, 43.3013, -83.9, 0.5, -224)
+
+[node name="building_tower_B_yellow2" parent="castle_city" instance=ExtResource("42_jcnsp")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -449.9, 1.5, -164.3)
+
+[node name="building_mine_yellow2" parent="castle_city" instance=ExtResource("43_cgvr5")]
+transform = Transform3D(-17.3648, 0, -98.4808, 0, 100, 0, 98.4808, 0, -17.3648, 105.8, 0.5, -132.5)
+
+[node name="building_market_yellow3" parent="castle_city" instance=ExtResource("41_3yogb")]
+transform = Transform3D(43.3013, 0, -25, 0, 50, 0, 25, 0, 43.3013, -216.4, 1, -231.3)
+
+[node name="mountain_B_grass4" parent="castle_city" instance=ExtResource("37_j13yp")]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, -40.7, 0, 282.6)
+
+[node name="mountain_B_grass3" parent="castle_city" instance=ExtResource("37_j13yp")]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, -106.6, 0, 285.2)
+
+[node name="mountain_B_grass5" parent="castle_city" instance=ExtResource("37_j13yp")]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, -186.5, 0, 286.1)
+
+[node name="mountain_B_grass6" parent="castle_city" instance=ExtResource("37_j13yp")]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, -244.6, 0.5, 234.8)
+
+[node name="mountain_B_grass7" parent="castle_city" instance=ExtResource("37_j13yp")]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, -276.5, -6.5, 183.2)
+
+[node name="mountain_B_grass8" parent="castle_city" instance=ExtResource("37_j13yp")]
+transform = Transform3D(25, 0, 0, 0, 25, 0, 0, 0, 25, -322.4, -1.7, 135)
+
+[node name="mountain_A4" parent="castle_city" instance=ExtResource("32_l28oe")]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, -15.6, 0.5, -381.6)
+
+[node name="mountain_A5" parent="castle_city" instance=ExtResource("32_l28oe")]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 139.6, 0.5, -231.6)
+
+[node name="floor_dirt_large_rocky2" parent="castle_city" instance=ExtResource("44_ljrsy")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 4.7, 0.6, -177.5)
+
+[node name="floor_dirt_large_rocky3" parent="castle_city" instance=ExtResource("44_ljrsy")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 4.6, 0.6, -217.4)
+
+[node name="floor_dirt_large_rocky4" parent="castle_city" instance=ExtResource("44_ljrsy")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -1.5, 0.6, -254.2)
+
+[node name="floor_dirt_large_rocky5" parent="castle_city" instance=ExtResource("44_ljrsy")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 31.7, 0.6, -248.8)
+
+[node name="floor_dirt_large_rocky6" parent="castle_city" instance=ExtResource("44_ljrsy")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 40.3, 0.6, -209.3)
+
+[node name="floor_dirt_large_rocky7" parent="castle_city" instance=ExtResource("44_ljrsy")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 43.2, 0.6, -173.2)
+
+[node name="floor_dirt_large_rocky8" parent="castle_city" instance=ExtResource("44_ljrsy")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 70.1, 1.4, -155.3)
+
+[node name="floor_dirt_large_rocky9" parent="castle_city" instance=ExtResource("44_ljrsy")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 30, 1.5, -139.7)
+
+[node name="floor_dirt_large_rocky10" parent="castle_city" instance=ExtResource("44_ljrsy")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 67.3, 0.6, -246.3)
+
+[node name="floor_dirt_large_rocky11" parent="castle_city" instance=ExtResource("44_ljrsy")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 76.1, 0.6, -199.9)
+
+[node name="floor_dirt_large_rocky12" parent="castle_city" instance=ExtResource("44_ljrsy")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 22.9, 0.6, -280.6)
+
+[node name="floor_dirt_large_rocky13" parent="castle_city" instance=ExtResource("44_ljrsy")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 67.2, 0.6, -225)
+
+[node name="floor_dirt_large_rocky14" parent="castle_city" instance=ExtResource("44_ljrsy")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 91.1, 0.6, -243.3)
+
+[node name="floor_dirt_large_rocky15" parent="castle_city" instance=ExtResource("44_ljrsy")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 51.7, 0.6, -108.9)
+
+[node name="barrel_gltf" parent="castle_city" instance=ExtResource("45_j13yp")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 12.6, 1.2, -254)
+
+[node name="barrel_gltf2" parent="castle_city" instance=ExtResource("45_j13yp")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 14, 1.2, -264.9)
+
+[node name="barrel_gltf3" parent="castle_city" instance=ExtResource("45_j13yp")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 24, 1.2, -260.4)
+
+[node name="floor_dirt_large2" parent="castle_city" instance=ExtResource("46_e1ikl")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -34.9, 0.6, -185.2)
+
+[node name="floor_dirt_large3" parent="castle_city" instance=ExtResource("46_e1ikl")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -34.9, 0.6, -220.7)
+
+[node name="floor_dirt_large4" parent="castle_city" instance=ExtResource("46_e1ikl")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -41.2, 0.6, -259.4)
+
+[node name="floor_dirt_large5" parent="castle_city" instance=ExtResource("46_e1ikl")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -64.9, 0.6, -212)
+
+[node name="floor_dirt_large6" parent="castle_city" instance=ExtResource("46_e1ikl")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -64.9, 0.6, -245.2)
+
+[node name="floor_dirt_large_rocky16" parent="castle_city" instance=ExtResource("44_ljrsy")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -68.7, 0.6, -269.2)
+
+[node name="floor_dirt_large_rocky17" parent="castle_city" instance=ExtResource("44_ljrsy")]
+transform = Transform3D(9.39693, 0, 3.4202, 0, 10, 0, -3.4202, 0, 9.39693, -52.1, 0.6, -185.4)
+
+[node name="floor_dirt_large_rocky18" parent="castle_city" instance=ExtResource("44_ljrsy")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -33, 0.9, -175.2)
+
+[node name="floor_dirt_large_rocky19" parent="castle_city" instance=ExtResource("44_ljrsy")]
+transform = Transform3D(7.66044, 0, -6.42788, 0, 10, 0, 6.42788, 0, 7.66044, -15.5, 0.6, -158.9)
+
+[node name="floor_dirt_large7" parent="castle_city" instance=ExtResource("46_e1ikl")]
+transform = Transform3D(9.39693, 0, -3.4202, 0, 10, 0, 3.4202, 0, 9.39693, -5.4, 0.9, -154)
+
+[node name="floor_dirt_large8" parent="castle_city" instance=ExtResource("46_e1ikl")]
+transform = Transform3D(8.66025, 0, 5, 0, 10, 0, -5, 0, 8.66025, 5.9, 1.2, -145.2)
+
+[node name="building_market_green2" parent="castle_city" instance=ExtResource("47_j13yp")]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, -166.3, 0.5, -197.1)
+
+[node name="ceiling_tile12" parent="castle_city" instance=ExtResource("39_qvxxn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -432.3, 104.6, 23.8)
+
+[node name="pillar3" parent="castle_city" instance=ExtResource("20_j2rcy")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -276.3, 28, -44.5)
+
+[node name="ceiling_tile6" parent="castle_city" instance=ExtResource("39_qvxxn")]
+transform = Transform3D(-1.09278e-06, 0, 30, 0, 30, 0, -25, 0, -1.31134e-06, -170, 56.8, -64.9)
+
+[node name="ceiling_tile7" parent="castle_city" instance=ExtResource("39_qvxxn")]
+transform = Transform3D(-1.09278e-06, 0, -30, 0, 30, 0, 25, 0, -1.31134e-06, -256.9, 56.3, -64.3)
