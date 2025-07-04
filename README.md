@@ -8,13 +8,6 @@ The project is currently a **work in progress**.
 - ✅ Implemented a **3D character controller**
 - ✅ Started **building the environment and world layout**
 
-## 🚧 Planned Features
-
-- Gameplay mechanics
-- Interactive objects
-- UI/UX elements
-- Sound and animations
-
 ## 📁 Project Status
 
 This is **Project 3** for the course. It is still in the early development phase with more updates planned.
