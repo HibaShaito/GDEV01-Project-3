@@ -3,8 +3,13 @@ extends CharacterBody3D
 @export_group("Camera")
 @export_range(0.0,1.0) var mouse_sensivity:=0.25
 
+var _footstep_timer := 0.0
+var _step_interval := 0.4  # tune this for faster/slower footsteps
+
+
 @export_group("Movement")
 @export var move_speed=8.0
+@export var sprint_multiplier = 1.5
 @export var acceleration:=20.0
 @export var rotation_speed := 12.0
 @export var jump_impluse :=12.0
@@ -50,7 +55,11 @@ func _physics_process(delta: float) -> void:
 	
 	var y_velocity := velocity.y
 	velocity.y=0.0
-	velocity =velocity.move_toward(move_direction*move_speed,acceleration*delta)
+	var is_sprinting := Input.is_action_pressed("sprint")
+	var speed: float = move_speed * (sprint_multiplier if is_sprinting else 1.0)
+	velocity = velocity.move_toward(move_direction * speed, acceleration * delta)
+
+
 	velocity.y=y_velocity + _gravity*delta
 	
 	var is_starting_jump := Input.is_action_just_pressed("jump") and is_on_floor()
@@ -68,14 +77,28 @@ func _physics_process(delta: float) -> void:
 	
 	if is_starting_jump:
 		_skin.jump()
+		$jump.play()
 	elif not is_on_floor() and velocity.y<0:
 		_skin.fall()
 	elif is_on_floor():
 		var ground_speed := velocity.length()
 		if ground_speed >0.0:
 			_skin.move()
+			
+			# Footstep sound logic
+			_footstep_timer -= delta
+			if _footstep_timer <= 0.0:
+				$"Footsteps sound".play()
+				_footstep_timer = _step_interval / (sprint_multiplier if is_sprinting else 1.0)
+				
+				
 		else:
 			_skin.idle()
+			_footstep_timer = 0.0  # reset to prevent immediate sound when starting again
+
+
+			
+
 	
 	
 	

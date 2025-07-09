@@ -1,13 +1,27 @@
-[gd_scene load_steps=5 format=3 uid="uid://dqmut3b5mwfmk"]
+[gd_scene load_steps=12 format=3 uid="uid://dqmut3b5mwfmk"]
 
 [ext_resource type="Script" uid="uid://dfinm14kol17p" path="res://Scripts/suzi_player.gd" id="1_3bf6g"]
 [ext_resource type="PackedScene" uid="uid://6g5b2x5vhrgj" path="res://Scenes/Suzi_skin.tscn" id="1_280j6"]
+[ext_resource type="Script" uid="uid://sfjyobneyc3o" path="res://Scripts/Interaction/PlayerInteractionHandler.gd" id="3_3ht5k"]
+[ext_resource type="Script" uid="uid://n5ksd1aeetyc" path="res://Scripts/Inventory/ItemData.gd" id="4_6x1wq"]
+[ext_resource type="PackedScene" uid="uid://cea5jf7tummvr" path="res://Scenes/Objects/Test Cube.tscn" id="5_xvbeo"]
+[ext_resource type="AudioStream" uid="uid://m8xvc6yvirmd" path="res://Assests/Sounds/Footsteps.wav" id="6_3ahhc"]
+[ext_resource type="AudioStream" uid="uid://bommnbsh26pyn" path="res://Assests/Sounds/jump.wav" id="7_7ns1g"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_18gdg"]
 radius = 0.4
 height = 2.2
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_3bf6g"]
+
+[sub_resource type="Resource" id="Resource_6x1wq"]
+script = ExtResource("4_6x1wq")
+ItemName = "Test Cube"
+ItemModelPrefab = ExtResource("5_xvbeo")
+metadata/_custom_type_script = "uid://n5ksd1aeetyc"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3ahhc"]
+size = Vector3(5.5, 2.7, 4.7)
 
 [node name="Character_Suzi" type="CharacterBody3D"]
 script = ExtResource("1_3bf6g")
@@ -30,4 +44,24 @@ spring_length = 8.0
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot/SpringArm3D"]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="Interaction Area" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("3_3ht5k")
+ItemTypes = Array[ExtResource("4_6x1wq")]([SubResource("Resource_6x1wq")])
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interaction Area"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0500002, 0.85, 0.35)
+shape = SubResource("BoxShape3D_3ahhc")
+
+[node name="Footsteps sound" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("6_3ahhc")
+volume_db = -12.916
+
+[node name="jump" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("7_7ns1g")
+volume_db = -11.38
+
+[connection signal="body_entered" from="Interaction Area" to="Interaction Area" method="OnObjectEnteredArea"]
+[connection signal="body_exited" from="Interaction Area" to="Interaction Area" method="OnObjectExitedArea"]
